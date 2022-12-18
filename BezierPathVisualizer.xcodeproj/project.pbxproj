@@ -11,6 +11,7 @@
 		E752F0BE294FA49A007F5FF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752F0BD294FA49A007F5FF2 /* ContentView.swift */; };
 		E752F0C0294FA4A2007F5FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E752F0BF294FA4A2007F5FF2 /* Assets.xcassets */; };
 		E752F0C3294FA4A2007F5FF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E752F0C2294FA4A2007F5FF2 /* Preview Assets.xcassets */; };
+		E752F0CB294FA4E1007F5FF2 /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E752F0CA294FA4E1007F5FF2 /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E752F0CB294FA4E1007F5FF2 /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = BezierPathVisualizer;
+			packageProductDependencies = (
+				E752F0CA294FA4E1007F5FF2 /* PureSwiftUI */,
+			);
 			productName = BezierPathVisualizer;
 			productReference = E752F0B8294FA49A007F5FF2 /* BezierPathVisualizer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = E752F0AF294FA49A007F5FF2;
+			packageReferences = (
+				E752F0C9294FA4E1007F5FF2 /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = E752F0B9294FA49A007F5FF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E752F0C9294FA4E1007F5FF2 /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E752F0CA294FA4E1007F5FF2 /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E752F0C9294FA4E1007F5FF2 /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E752F0B0294FA49A007F5FF2 /* Project object */;
 }
